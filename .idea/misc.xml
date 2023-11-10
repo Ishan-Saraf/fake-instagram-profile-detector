@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9" project-jdk-type="Python SDK" />
+=======
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (fake instagram account detector)" project-jdk-type="Python SDK" />
+>>>>>>> b40db8268f119392e69e88c212b459e1ea6c0764
   <component name="PyCharmProfessionalAdvertiser">
     <option name="shown" value="true" />
   </component>
