@@ -5,6 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fake Instagram Account Detection</title>
     <link rel="stylesheet" href="static/styles.css">
+
+    <script>
+        // Display the result in an alert when the page loads
+        window.onload = function() {
+            var result = "{{pred}}";
+            if (result) {
+                alert(result);
+            }
+        };
+    </script>
+
 </head>
 <body>
     <h1>Fake Instagram Account Detection</h1>
@@ -42,7 +53,7 @@
         <button type="submit">Detect Fake Account</button>
     </form>
     <div id="result-box">
-      <br>{{pred}}<br>
+      {{pred}}
     </div>
 
 
