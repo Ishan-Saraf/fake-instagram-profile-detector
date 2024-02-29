@@ -6,56 +6,50 @@
     <title>Fake Instagram Account Detection</title>
     <link rel="stylesheet" href="static/styles.css">
 
-    <script>
-        // Display the result in an alert when the page loads
-        window.onload = function() {
-            var result = "{{pred}}";
-            if (result) {
-                alert(result);
-            }
-        };
-    </script>
-
 </head>
 <body>
     <h1>Fake Instagram Account Detection</h1>
-    <form id="detectionForm" action="/predict" method="post">
-        <label for="accountName">Account Name:</label>
-        <input type="text" id="accountName" name="accountName" required>
+    <div class="container">
+        <form id="detectionForm" action="/predict" method="post">
+            <h1>Enter the account details:</h1>
+            <label for="accountName">Account Name:</label>
+            <input type="text" id="accountName" name="accountName" required>
 
-        <label for="accountId">Account ID:</label>
-        <input type="text" id="accountId" name="accountId" required>
+            <label for="accountId">Account ID:</label>
+            <input type="text" id="accountId" name="accountId" required>
 
-        <label for="followerCount">Follower Count:</label>
-        <input type="number" id="followerCount" name="followerCount" required>
+            <label for="followerCount">Follower Count:</label>
+            <input type="number" id="followerCount" name="followerCount" required>
 
-        <label for="followingCount">Following Count:</label>
-        <input type="number" id="followingCount" name="followingCount" required>
+            <label for="followingCount">Following Count:</label>
+            <input type="number" id="followingCount" name="followingCount" required>
 
-        <label for="postCount">Post Count:</label>
-        <input type="number" id="postCount" name="postCount" required>
+            <label for="postCount">Post Count:</label>
+            <input type="number" id="postCount" name="postCount" required>
 
-        <label for="isPrivate">Account is Private:</label>
-        <select id="isPrivate" name="isPrivate">
-            <option value="true">Yes</option>
-            <option value="false">No</option>
-        </select>
+            <label for="isPrivate">Account is Private:</label>
+            <select id="isPrivate" name="isPrivate">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
 
-        <label for="hasProfilePicture">Has Profile Picture:</label>
-        <select id="hasProfilePicture" name="hasProfilePicture">
-            <option value="true">Yes</option>
-            <option value="false">No</option>
-        </select>
+            <label for="hasProfilePicture">Has Profile Picture:</label>
+            <select id="hasProfilePicture" name="hasProfilePicture">
+                <option value="true">Yes</option>
+                <option value="false">No</option>
+            </select>
 
-        <label for="description">Account Description:</label>
-        <input type="text" id="description" name="description">
+            <label for="description">Account Description:</label>
+            <input type="text" id="description" name="description">
 
-        <button type="submit">Detect Fake Account</button>
-    </form>
-    <div id="result-box">
-      {{pred}}
+            <button type="submit">Detect Fake Account</button>
+        </form>
+
+        <div id="result-box">
+            <h1>Result:</h1>
+          {{pred}}
+        </div>
+
     </div>
-
-
 </body>
 </html>
