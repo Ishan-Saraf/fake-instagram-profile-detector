@@ -4,21 +4,32 @@ body {
     align-items: center;
     margin: 0;
     padding: 20px;
+    background-color: #4CAF50;
 }
 
-h1 {
+#heading {
+    color: white;
     text-align: center;
+    font-family: arial;
+    display: flex-row;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    text-shadow: 2px 2px black;
 }
 
 .container {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            width: 100%;
-            margin-top: 20px;
-        }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    margin: 20px 10px 20px 10px;
+    background-color: white;
+}
 
 form {
+    font-family: arial;
     max-width: 400px;
     margin: auto;
     padding: 20px;
@@ -27,6 +38,8 @@ form {
     align-items: center;
     border: 3px solid green;
     border-radius: 8px;
+    background-color: white;
+    box-shadow: 5px 5px #4CAF50;
 }
 
 label {
@@ -35,6 +48,13 @@ label {
 }
 
 input, select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input, select:hover {
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
@@ -63,7 +83,8 @@ button:hover {
     border-radius: 8px;
     margin-top: 20px
     box-sizing: border-box;
-
+    background-color: white;
+    box-shadow: 5px 5px #4CAF50;
 }
 
 #result-box > h1 {
